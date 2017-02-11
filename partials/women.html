@@ -1,0 +1,26 @@
+<ion-header-bar class="bar bar-header bar-calm">
+	<h1 class="title">In the Company of Women</h1>
+</ion-header-bar>
+
+<ion-content>
+<ion-refresher pulling-text="pull to refresh" refreshing-text="loading..." on-refresh="loadWomen()">
+</ion-refresher>	
+	
+<p class="introText">Pull down to refresh list</p>
+
+<h3 class="subText calm">Inspiration and Advice from Makers, Artists and Entrepreneurs</h3>
+	<p class="credit">Excerpts taken from "In the Company of Women" by Grace Bonney</p>
+	<div class="list card">
+		<div class="item item-avatar" ng-repeat="girls in women">
+			<img data-ng-src="img/{{ girls.thumb }}" alt="Women Photo">
+			<h2>{{ girls.name }}</h2>
+			<p>{{ girls.job }}</p>
+			<p><a class="item item-icon-left calm" href="#details/{{girls.id}}">
+    		<i class="icon ion-chatbubbles"></i>
+    		See answers from the interview.
+  			</a></p>
+		</div>
+			
+	</div>
+
+</ion-content>

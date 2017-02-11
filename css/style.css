@@ -1,0 +1,17 @@
+/* Empty. Add your own CSS if you like */
+.introText{
+	text-align: center;
+	margin-top: 20px;
+	color:#666666;
+}
+
+.subText{
+
+	padding: 40px 40px 30px 50px;
+
+}
+
+.credit{
+	color:#666666;
+	padding: 0px 40px 40px 50px;
+}
